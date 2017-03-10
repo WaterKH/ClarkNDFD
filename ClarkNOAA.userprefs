@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{8CF77C09-E0B0-4B42-AACD-9D46337F37A0}|Default">
+  <MonoDevelop.Ide.ItemProperties.ClarkNOAA.Droid PreferredExecutionTarget="Android.avd_x86" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="ClarkNOAA/Utilities/REST_API.cs" Line="28" Column="1" />
+      <File FileName="ClarkNOAA/Utilities/Globals.cs" Line="7" Column="80" />
+      <File FileName="Droid/MainActivity.cs" Line="28" Column="33" />
+      <File FileName="iOS/AppDelegate.cs" Line="21" Column="58" />
+      <File FileName="ClarkNOAA/Pages/MapPage.cs" Line="23" Column="1" />
+      <File FileName="Droid/Properties/AndroidManifest.xml" Line="13" Column="98" />
+      <File FileName="ClarkNOAA/Utilities/NOAAItem.cs" Line="12" Column="9" />
+      <File FileName="iOS/Main.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ClarkNOAA" expanded="True">
+            <Node name="ClarkNOAA" expanded="True">
+              <Node name="Pages" expanded="True" />
+              <Node name="Utilities" expanded="True" />
+            </Node>
+            <Node name="ClarkNOAA.Droid" expanded="True">
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="ClarkNOAA.iOS" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ClarkNOAA.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EB8D4351-F4D8-450D-924E-F4A80AB27057" />
+  <MultiItemStartupConfigurations />
+</Properties>

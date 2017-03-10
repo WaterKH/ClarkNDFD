@@ -1,0 +1,10 @@
+*.dll
+
+Droid/obj/
+Droid/bin/
+iOS/obj/
+iOS/bin/
+UITests/obj/
+UITests/bin/
+
+packages/
