@@ -5,7 +5,7 @@ using NUnit.Framework;
 using Xamarin.UITest;
 using Xamarin.UITest.Queries;
 
-namespace ClarkNOAA.UITests
+namespace ClarkNDFD.UITests
 {
 	[TestFixture (Platform.Android)]
 	[TestFixture (Platform.iOS)]
@@ -26,12 +26,16 @@ namespace ClarkNOAA.UITests
 		}
 
 		[Test]
-		public void WelcomeTextIsDisplayed ()
+		public void ClickingButtonTwiceShouldChangeItsLabel ()
 		{
-			AppResult [] results = app.WaitForElement (c => c.Marked ("Welcome to Xamarin Forms!"));
-			app.Screenshot ("Welcome screen.");
+			Func<AppQuery, AppQuery> button = c => c.Button ("myButton");
 
-			Assert.IsTrue (results.Any ());
+			app.Tap (button);
+			app.Tap (button);
+			AppResult [] results = app.Query (button);
+			app.Screenshot ("Button clicked twice.");
+
+			Assert.AreEqual ("2 clicks!", results [0].Text ?? results [0].Label);
 		}
 	}
 }
