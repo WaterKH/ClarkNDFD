@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using UIKit;
+using MapKit;
 
 namespace ClarkNDFD.iOS
 {
@@ -24,6 +25,17 @@ namespace ClarkNDFD.iOS
 #if ENABLE_TEST_CLOUD
 			Xamarin.Calabash.Start();
 #endif
+
+			Window = new UIWindow ();
+
+			var controller = new iOSMap ();
+
+			//var navController = new UINavigationController (controller);
+
+			Window.RootViewController = controller;
+
+			// make the window visible
+			Window.MakeKeyAndVisible ();
 
 			return true;
 		}

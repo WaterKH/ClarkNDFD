@@ -6,8 +6,9 @@ namespace ClarkNDFD.iOS
 	public class Location
 	{
 		CLLocationManager locationManager = new CLLocationManager ();
+		public CLLocation currentLocation;
 
-		public void GetPresentLocation ()
+		public void GetCurrentLocation ()
 		{
 			locationManager.RequestWhenInUseAuthorization ();
 			try {
@@ -22,18 +23,12 @@ namespace ClarkNDFD.iOS
 				locationManager.StartUpdatingLocation ();
 				//var location = locationManager.Location.Coordinate;
 
-				// Grabs the new/ current location and stores it in Globals.currLocation
-				this.UpdateGlobalLocation (locationManager.Location);
+				// Grabs the new/ current location and stores it
+				currentLocation = locationManager.Location;
 
 			} catch (Exception ex) {
 				var msg = ex.Message;
 			}
-		}
-
-		public void UpdateGlobalLocation(CLLocation location)
-		{
-			Globals.currLocation = location.Coordinate.Latitude + "," + location.Coordinate.Longitude;
-			Console.WriteLine (Globals.currLocation);
 		}
 	}
 }

@@ -10,5 +10,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)MyClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\Globals.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\NOAAItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\REST_API.cs" />
   </ItemGroup>
 </Project>

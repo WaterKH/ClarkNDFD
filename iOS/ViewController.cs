@@ -1,5 +1,5 @@
 ﻿using System;
-
+using MapKit;
 using UIKit;
 
 namespace ClarkNDFD.iOS
@@ -20,13 +20,6 @@ namespace ClarkNDFD.iOS
 #if ENABLE_TEST_CLOUD
 			Xamarin.Calabash.Start ();
 #endif
-
-			// Perform any additional setup after loading the view, typically from a nib.
-			Button.AccessibilityIdentifier = "myButton";
-			Button.TouchUpInside += delegate {
-				var title = string.Format ("{0} clicks!", count++);
-				Button.SetTitle (title, UIControlState.Normal);
-			};
 		}
 
 		public override void DidReceiveMemoryWarning ()

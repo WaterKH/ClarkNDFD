@@ -1,31 +1,20 @@
-﻿<Properties StartupConfiguration="{156C2CCF-C851-46F0-A891-F396CFB0C9F4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/AppDelegate.cs">
+﻿<Properties StartupConfiguration="{22000A00-C4B8-4746-B31A-F6DCD5845C62}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ClarkNDFD/_Utilities/Test.cs">
     <Files>
-      <File FileName="ClarkNDFD/MyClass.cs" Line="1" Column="1" />
-      <File FileName="iOS/ViewController.cs" Line="1" Column="1" />
-      <File FileName="iOS/Main.cs" Line="1" Column="1" />
-      <File FileName="iOS/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="iOS/ViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="ClarkNDFD/AppDelegate.cs" Line="30" Column="1" />
+      <File FileName="ClarkNDFD/ViewController.cs" Line="1" Column="1" />
+      <File FileName="ClarkNDFD/_Utilities/Globals.cs" Line="1" Column="1" />
+      <File FileName="ClarkNDFD/_Utilities/REST_API.cs" Line="2" Column="17" />
+      <File FileName="ClarkNDFD/_Utilities/NDFDClasses.cs" Line="34" Column="12" />
+      <File FileName="ClarkNDFD/Main.cs" Line="13" Column="1" />
+      <File FileName="ClarkNDFD/_Utilities/Test.cs" Line="13" Column="8" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="ClarkNDFD" expanded="True">
-            <Node name="ClarkNDFD" expanded="True" />
-            <Node name="ClarkNDFD.Droid" expanded="True" />
-            <Node name="ClarkNDFD.iOS" expanded="True">
-              <Node name="AppDelegate.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ClarkNDFD.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EB8D4351-F4D8-450D-924E-F4A80AB27057" />
+  <MonoDevelop.Ide.ItemProperties.ClarkNDFD PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.B66E0BA2-5362-4748-91E3-DD9A942C3C3B" />
   <MultiItemStartupConfigurations />
 </Properties>

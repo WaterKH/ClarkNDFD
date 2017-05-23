@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Net.Http;
-using System.Net.Http.Headers;
+//using System.Net.Http;
+//using System.Net.Http.Headers;
 using System.Diagnostics;
 
 namespace ClarkNDFD
 {
 	public class REST_API
 	{
-		public static void NOAA_GetStations()
+		/*public static void NOAA_GetStations()
 		{
 			HttpClient client = new HttpClient ();
 			client.BaseAddress = new Uri (Globals.NOAABaseURI);
@@ -38,6 +38,6 @@ namespace ClarkNDFD
 				Debug.WriteLine ("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
 				Debug.WriteLine (client.BaseAddress + "" + urlParameters);
 			}
-		}
+		}*/
 	}
 }

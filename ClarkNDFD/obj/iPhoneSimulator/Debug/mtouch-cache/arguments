@@ -1,0 +1,43 @@
+# Version: 10.11.0.126 (master: 7571635e)
+# [first argument, ignore] # --cache
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.11.0.126/lib/mtouch/mtouch.exe \
+	/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/mtouch-cache \
+	--sim \
+	/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/ClarkNDFD.app \
+	--executable \
+	ClarkNDFD \
+	--debug \
+	--nolink \
+	--sdkroot \
+	/Volumes/WaterKH/Xcode.app/Contents/Developer \
+	--sdk \
+	10.3 \
+	--targetver \
+	8.0 \
+	--aot-options=-O=-float32 \
+	--http-message-handler=HttpClientHandler \
+	--abi=x86_64 \
+	--symbollist \
+	/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
+	--dsym=no \
+	-r \
+	/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/packages/Xamarin.TestCloud.Agent.0.19.0/lib/Xamarin.iOS10/Calabash.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	-r \
+	/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/packages/RestSharp.105.2.3/lib/Xamarin.iOS10/RestSharp.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
+	-r \
+	/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/packages/Xamarin.TestCloud.Agent.0.19.0/lib/Xamarin.iOS10/Calabash.dll \
+	-r \
+	/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/packages/RestSharp.105.2.3/lib/Xamarin.iOS10/RestSharp.dll \
+	--target-framework \
+	"Xamarin.iOS,v1.0" \
+	/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/ClarkNDFD.exe \

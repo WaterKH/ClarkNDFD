@@ -1,0 +1,12 @@
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/ClarkNDFD.app:/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/mtouch-cache/Link/ClarkNDFD.exe
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/ClarkNDFD.app:/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/mtouch-cache/Link/mscorlib.dll
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/ClarkNDFD.app:/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/ClarkNDFD.app:/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.dll
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/ClarkNDFD.app:/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Mono.Security.dll
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/ClarkNDFD.app:/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Xml.dll
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/ClarkNDFD.app:/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Core.dll
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/ClarkNDFD.app:/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/mtouch-cache/Link/RestSharp.dll
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/ClarkNDFD.app:/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Xml.Linq.dll
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/ClarkNDFD.app:/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Runtime.Serialization.dll
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/ClarkNDFD.app:/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.ServiceModel.Internals.dll
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/ClarkNDFD.app:/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Calabash.dll
