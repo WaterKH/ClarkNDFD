@@ -10,13 +10,11 @@ namespace ClarkNDFD
 		readonly static string NDFDURL = "http://graphical.weather.gov/xml/sample_products/browser_interface";
 		
         public static async Task<Dwml> GET_NDFDGenCenter(double centerPointLat, double centerPointLon,
-		                                                                double distLat, double distLon, double resSquare) 
-		                                                                //DateTime endTime)
+		                                                 double distLat, double distLon, double resSquare)
 		{
 			Console.WriteLine ("ENTER GET - NDFDXML");
 
 			string action = "/ndfdXMLclient.php";
-            string test = "ndfdXMLclient.php?lat=38.99&lon=-77.01&product=time-series&maxt=maxt&mint=mint";
 
 			// Client creation
 			var client = new RestClient ();
@@ -47,7 +45,7 @@ namespace ClarkNDFD
 				}
 			}
 
-			Console.WriteLine (client.BuildUri(request).OriginalString);
+            Console.WriteLine(client.BuildUri(request).AbsoluteUri);
 			// Generate response
             var response = ExecuteAsync<Dwml> (request, client).Result;
 

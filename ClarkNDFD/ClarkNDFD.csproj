@@ -114,9 +114,9 @@
     </Compile>
     <Compile Include="_Utilities\Globals.cs" />
     <Compile Include="_Utilities\REST_API.cs" />
-    <Compile Include="_Utilities\NDFDClasses.cs" />
     <Compile Include="_Utilities\Settings.cs" />
-    <Compile Include="_Utilities\Test.cs" />
+    <Compile Include="_Utilities\NDFDXML.cs" />
+    <Compile Include="CustomAnnotation.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

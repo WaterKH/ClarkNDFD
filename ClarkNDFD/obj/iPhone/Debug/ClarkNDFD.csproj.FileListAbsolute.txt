@@ -1,0 +1,12 @@
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhone/Debug/ClarkNDFD.exe
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhone/Debug/ClarkNDFD.pdb
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhone/Debug/Calabash.dll
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhone/Debug/RestSharp.dll
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhone/Debug/RestSharp.xml
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/device-builds/iphone8.1-10.3.1/ibtool/_BundleResourceWithLogicalName.items
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/device-builds/iphone8.1-10.3.1/actool/_PartialAppManifest.items
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/device-builds/iphone8.1-10.3.1/actool/_BundleResourceWithLogicalName.items
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/device-builds/iphone8.1-10.3.1/optimized/
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/ClarkNDFD.csproj.CoreCompileInputs.cache
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/ClarkNDFD.exe
+/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/ClarkNDFD.pdb

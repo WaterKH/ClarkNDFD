@@ -1,6 +1,7 @@
 ﻿using Foundation;
 using UIKit;
 using System;
+using MapKit;
 
 namespace ClarkNDFD
 {
@@ -26,11 +27,12 @@ namespace ClarkNDFD
 //			Xamarin.Calabash.Start();
 #endif
 
-			var t = REST_API.GET_NDFDGenCenter (39.0000, -77.0000, 50, 50, 20);
-            Console.WriteLine ("Result: " + t.Result.Data.Parameters.Count);
+            // TODO This takes a loooong time if the parameters are filled
+			//var t = REST_API.GET_NDFDGenCenter (39.0000, -77.0000, 50, 50, 20);
 
 			return true;
 		}
+
 
 		public override void OnResignActivation (UIApplication application)
 		{

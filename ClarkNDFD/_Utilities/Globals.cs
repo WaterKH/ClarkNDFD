@@ -5,6 +5,7 @@ namespace ClarkNDFD
 	{
 		public static string iOSGoogleMapsKey = "AIzaSyAKEsSLSp-14mZD3QoCkyg82IyhHT5Lmuc";
 
-		public static string currLocation = "";
+        public static double currLocation_Lat;
+        public static double currLocation_Lon;
 	}
 }
