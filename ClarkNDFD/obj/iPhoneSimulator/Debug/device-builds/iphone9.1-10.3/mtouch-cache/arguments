@@ -1,11 +1,12 @@
-# Version: 10.11.0.126 (master: 7571635e)
+# Version: 10.10.0.36 (d15-2: d2270eec)
 # [first argument, ignore] # --cache
-/Library/Frameworks/Xamarin.iOS.framework/Versions/10.11.0.126/lib/mtouch/mtouch.exe \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/lib/mtouch/mtouch.exe \
 	/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/mtouch-cache \
 	--sim \
 	/Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/ClarkNDFD.app \
 	--executable \
 	ClarkNDFD \
+	--fastdev \
 	--debug \
 	--nolink \
 	--sdkroot \
@@ -14,7 +15,6 @@
 	10.3 \
 	--targetver \
 	8.0 \
-	--aot-options=-O=-float32 \
 	--http-message-handler=HttpClientHandler \
 	--abi=x86_64 \
 	--symbollist \

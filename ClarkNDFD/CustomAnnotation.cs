@@ -8,6 +8,7 @@ namespace ClarkNDFD
 	{
 		string title;
 		CLLocationCoordinate2D coord;
+        public string weather;
 
 		public CustomAnnotation(string title, CLLocationCoordinate2D coord)
 		{
@@ -23,12 +24,25 @@ namespace ClarkNDFD
 			}
 		}
 
+        public string Weather
+        {
+            get
+            {
+                return weather;
+            }
+        }
+
 		public override CLLocationCoordinate2D Coordinate
 		{
 			get
 			{
 				return coord;
 			}
+		}
+
+		public override void SetCoordinate(CLLocationCoordinate2D value)
+		{
+			coord = value;
 		}
 	}
 }
