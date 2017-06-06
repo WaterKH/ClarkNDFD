@@ -7,13 +7,15 @@ namespace ClarkNDFD
 	public class CustomAnnotation : MKAnnotation
 	{
 		string title;
+        string locationKey;
 		CLLocationCoordinate2D coord;
         public string weather;
 
-		public CustomAnnotation(string title, CLLocationCoordinate2D coord)
+		public CustomAnnotation(string aTitle, CLLocationCoordinate2D coord, string locationKey)
 		{
-			this.title = title;
+			this.title = aTitle;
 			this.coord = coord;
+            this.locationKey = locationKey;
 		}
 
 		public override string Title
@@ -31,6 +33,14 @@ namespace ClarkNDFD
                 return weather;
             }
         }
+
+		public string LocationKey
+		{
+			get
+			{
+                return locationKey;
+			}
+		}
 
 		public override CLLocationCoordinate2D Coordinate
 		{

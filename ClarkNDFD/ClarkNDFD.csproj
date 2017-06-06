@@ -99,6 +99,7 @@
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="WeatherViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -117,6 +118,11 @@
     <Compile Include="_Utilities\Settings.cs" />
     <Compile Include="_Utilities\NDFDXML.cs" />
     <Compile Include="CustomAnnotation.cs" />
+    <Compile Include="TableSource.cs" />
+    <Compile Include="WeatherViewController.cs" />
+    <Compile Include="WeatherViewController.designer.cs">
+      <DependentUpon>WeatherViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

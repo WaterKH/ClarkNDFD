@@ -1,13 +1,11 @@
 ﻿<Properties StartupConfiguration="{22000A00-C4B8-4746-B31A-F6DCD5845C62}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ClarkNDFD/ViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ClarkNDFD/TableSource.cs">
     <Files>
-      <File FileName="ClarkNDFD/AppDelegate.cs" Line="36" Column="9" />
-      <File FileName="ClarkNDFD/_Utilities/Globals.cs" Line="9" Column="46" />
-      <File FileName="ClarkNDFD/_Utilities/REST_API.cs" Line="108" Column="6" />
-      <File FileName="ClarkNDFD/ViewController.cs" Line="89" Column="127" />
-      <File FileName="ClarkNDFD/CustomAnnotation.cs" Line="34" Column="4" />
-      <File FileName="ClarkNDFD/Main.cs" Line="13" Column="1" />
-      <File FileName="ClarkNDFD/_Utilities/NDFDXML.cs" Line="411" Column="3" />
+      <File FileName="ClarkNDFD/ViewController.cs" Line="155" Column="13" />
+      <File FileName="ClarkNDFD/WeatherViewController.cs" Line="21" Column="38" />
+      <File FileName="ClarkNDFD/CustomAnnotation.cs" Line="41" Column="35" />
+      <File FileName="ClarkNDFD/_Utilities/Globals.cs" Line="127" Column="13" />
+      <File FileName="ClarkNDFD/TableSource.cs" Line="38" Column="65" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />

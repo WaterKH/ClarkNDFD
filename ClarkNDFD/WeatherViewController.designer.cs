@@ -7,11 +7,12 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
 namespace ClarkNDFD
 {
-    [Register ("ViewController")]
-    partial class ViewController
+    [Register ("WeatherViewController")]
+    partial class WeatherViewController
     {
         void ReleaseDesignerOutlets ()
         {

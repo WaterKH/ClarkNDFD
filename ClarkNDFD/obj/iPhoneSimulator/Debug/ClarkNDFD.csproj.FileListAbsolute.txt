@@ -11,3 +11,16 @@
 /Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/actool/_PartialAppManifest.items
 /Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/actool/_BundleResourceWithLogicalName.items
 /Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/optimized/
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/ClarkNDFD.exe
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/ClarkNDFD.pdb
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/Calabash.dll
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/RestSharp.dll
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhoneSimulator/Debug/RestSharp.xml
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/ibtool/_BundleResourceWithLogicalName.items
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/actool/_PartialAppManifest.items
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/actool/_BundleResourceWithLogicalName.items
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/optimized/
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/ClarkNDFD.csprojResolveAssemblyReference.cache
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/ClarkNDFD.csproj.CoreCompileInputs.cache
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/ClarkNDFD.exe
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/ClarkNDFD.pdb

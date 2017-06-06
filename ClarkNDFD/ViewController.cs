@@ -25,7 +25,7 @@ namespace ClarkNDFD
 			map = new MKMapView(UIScreen.MainScreen.Bounds);
 			map.AutoresizingMask = UIViewAutoresizing.FlexibleDimensions;
 
-			mapDel = new MyMapDelegate();
+			mapDel = new MyMapDelegate(this);
 			map.Delegate = mapDel;
 
 			CLLocationManager locationManager = new CLLocationManager();
@@ -65,6 +65,9 @@ namespace ClarkNDFD
             Globals.currLocation_Lon = -78.923056;
 
             var weatherDetails = REST_API.GET_NDFDGenCenter(Globals.currLocation_Lat, Globals.currLocation_Lon, 50, 50, 20).Result;
+
+            Globals.dwml = weatherDetails;
+
             var mapAnnotations = new List<CustomAnnotation>();
 
             if (weatherDetails != null)
@@ -83,8 +86,9 @@ namespace ClarkNDFD
 					currImage = param.Conditionsicon.Iconlink[0];
                     MyMapDelegate.mId = tempLoc[i].Locationkey;
 
+
 					//TODO Fix these custom annotations pictures
-					var tempAnnotation = new CustomAnnotation("Weather", c);
+                    var tempAnnotation = new CustomAnnotation("Weather", c, tempLoc[i].Locationkey);
 
                     tempAnnotation.weather = param.Temperature[1].Type + ": " + param.Temperature[1].Value[0] + "\n";
                     tempAnnotation.weather += param.Temperature[0].Type + ": " + param.Temperature[0].Value[0];
@@ -105,6 +109,12 @@ namespace ClarkNDFD
 		{
 			string pId = "PinAnnotation";
 			public static string mId = "CustomAnnotation";
+            ViewController viewContr;
+
+            public MyMapDelegate(ViewController aView)
+            {
+                viewContr = aView;
+            }
 
 			public override MKAnnotationView GetViewForAnnotation(MKMapView mapView, IMKAnnotation annotation)
 			{
@@ -149,8 +159,17 @@ namespace ClarkNDFD
 
 				if (customAn != null)
 				{
-					var alert = new UIAlertView("Weather", customAn.Weather, null, "OK");
-					alert.Show();
+					//var alert = new UIAlertView("Weather", customAn.Weather, null, "OK");
+					//alert.Show();
+
+                    WeatherViewController weather = viewContr.Storyboard.InstantiateViewController("WeatherViewController") as WeatherViewController;
+
+                    weather.locationKey = customAn.LocationKey;
+
+                    if (weather != null)
+                    {
+                        viewContr.NavigationController.PushViewController(weather, true);
+                    }
 				}
 			}
 		}
