@@ -6,6 +6,7 @@ using System.Xml.Serialization;
 using CoreLocation;
 using MapKit;
 using UIKit;
+using ClarkNDFD._Utilities;
 
 namespace ClarkNDFD
 {
@@ -33,164 +34,33 @@ namespace ClarkNDFD
 			// TODO Create an override for this DidUpdateUserLocation
 			/*map.DidUpdateUserLocation += (sender, e) =>
             {
-                if (map.UserLocation != null)
-                {
-                    CLLocationCoordinate2D coords = map.UserLocation.Coordinate;
-                    MKCoordinateSpan span = new MKCoordinateSpan(MilesToLatitudeDegrees(2), MilesToLongitudeDegrees(2, coords.Latitude));
-                    map.Region = new MKCoordinateRegion(coords, span);
-
-                    Globals.currLocation_Lat = coords.Latitude;
-                    Globals.currLocation_Lon = coords.Longitude;
-                }
+                
             };*/
 
-			//map.ShowsUserLocation = true;
+            CLLocationCoordinate2D coords = locationManager.Location.Coordinate;//map.UserLocation.Coordinate;
+			MKCoordinateSpan span = new MKCoordinateSpan(Utilities.MilesToLatitudeDegrees(2), 
+                                                         Utilities.MilesToLongitudeDegrees(2, coords.Latitude));
+			map.Region = new MKCoordinateRegion(coords, span);
 
+			Globals.currLocation_Lat = coords.Latitude;
+			Globals.currLocation_Lon = coords.Longitude;
+			
+
+			map.ShowsUserLocation = true;
+
+            Utilities.CreateWeatherPins(map);
+
+			Console.WriteLine("DISPLAY MAP");
 			View = map;
         }
 
-		public override void ViewDidLoad ()
-		{
-			base.ViewDidLoad ();
-			// Perform any additional setup after loading the view, typically from a nib.
-
-            map.ShowsUserLocation = true;
-
-            CreateWeatherPins(map);
-		}
-
-        public void CreateWeatherPins(MKMapView map)
+        public override void ViewDidLoad()
         {
-            Globals.currLocation_Lat = 34.422500;
-            Globals.currLocation_Lon = -78.923056;
-
-            var weatherDetails = REST_API.GET_NDFDGenCenter(Globals.currLocation_Lat, Globals.currLocation_Lon, 50, 50, 20).Result;
-
-            Globals.dwml = weatherDetails;
-
-            var mapAnnotations = new List<CustomAnnotation>();
-
-            if (weatherDetails != null)
-            {
-                var tempLoc = weatherDetails.Data.LocationList.Location;
-
-                for (int i = 0; i < tempLoc.Count; ++i)
-                {
-                    var param = weatherDetails.Data.ParameterList.Parameters[i];
-
-                    var tempLat = double.Parse(tempLoc[i].Point.Latitude);
-                    var tempLon = double.Parse(tempLoc[i].Point.Longitude);
-
-                    var c = new CLLocationCoordinate2D(tempLat, tempLon);
-
-					currImage = param.Conditionsicon.Iconlink[0];
-                    MyMapDelegate.mId = tempLoc[i].Locationkey;
+            base.ViewDidLoad();
+            // Perform any additional setup after loading the view, typically from a nib.
 
 
-					//TODO Fix these custom annotations pictures
-                    var tempAnnotation = new CustomAnnotation("Weather", c, tempLoc[i].Locationkey);
-
-                    tempAnnotation.weather = param.Temperature[1].Type + ": " + param.Temperature[1].Value[0] + "\n";
-                    tempAnnotation.weather += param.Temperature[0].Type + ": " + param.Temperature[0].Value[0];
-
-                    mapAnnotations.Add(tempAnnotation);
-                }
-            }
-
-            Console.WriteLine(("Adding Annotations"));
-            map.AddAnnotations(mapAnnotations.ToArray());
-
-            var coords = new CLLocationCoordinate2D(Globals.currLocation_Lat, Globals.currLocation_Lon);
-            MKCoordinateSpan span = new MKCoordinateSpan(MilesToLatitudeDegrees(100), MilesToLongitudeDegrees(100, coords.Latitude));
-			map.Region = new MKCoordinateRegion(coords, span);
         }
-
-		public class MyMapDelegate : MKMapViewDelegate
-		{
-			string pId = "PinAnnotation";
-			public static string mId = "CustomAnnotation";
-            ViewController viewContr;
-
-            public MyMapDelegate(ViewController aView)
-            {
-                viewContr = aView;
-            }
-
-			public override MKAnnotationView GetViewForAnnotation(MKMapView mapView, IMKAnnotation annotation)
-			{
-				MKPinAnnotationView anView;
-
-				if (annotation is MKUserLocation)
-					return null;
-
-				if (annotation is CustomAnnotation)
-				{
-					// show custom annotation
-                    anView = (MKPinAnnotationView)mapView.DequeueReusableAnnotation(mId);
-
-					if (anView == null)
-						anView = new MKPinAnnotationView(annotation, mId);
-
-					anView.Image = UIImage.FromFile(currImage);
-					anView.CanShowCallout = true;
-                    anView.Draggable = false;
-					anView.RightCalloutAccessoryView = UIButton.FromType(UIButtonType.DetailDisclosure);
-
-				}
-				else
-				{
-
-					// show pin annotation
-					anView = (MKPinAnnotationView)mapView.DequeueReusableAnnotation(pId);
-
-					if (anView == null)
-						anView = new MKPinAnnotationView(annotation, pId);
-
-					((MKPinAnnotationView)anView).PinColor = MKPinAnnotationColor.Red;
-					anView.CanShowCallout = true;
-				}
-
-				return anView;
-			}
-
-			public override void CalloutAccessoryControlTapped(MKMapView mapView, MKAnnotationView view, UIControl control)
-			{
-				var customAn = view.Annotation as CustomAnnotation;
-
-				if (customAn != null)
-				{
-					//var alert = new UIAlertView("Weather", customAn.Weather, null, "OK");
-					//alert.Show();
-
-                    WeatherViewController weather = viewContr.Storyboard.InstantiateViewController("WeatherViewController") as WeatherViewController;
-
-                    weather.locationKey = customAn.LocationKey;
-
-                    if (weather != null)
-                    {
-                        viewContr.NavigationController.PushViewController(weather, true);
-                    }
-				}
-			}
-		}
-
-		public double MilesToLatitudeDegrees(double miles)
-		{
-			double earthRadius = 3960.0; // in miles
-			double radiansToDegrees = 180.0 / Math.PI;
-			return (miles / earthRadius) * radiansToDegrees;
-		}
-
-		public double MilesToLongitudeDegrees(double miles, double atLatitude)
-		{
-			double earthRadius = 3960.0; // in miles
-			double degreesToRadians = Math.PI / 180.0;
-			double radiansToDegrees = 180.0 / Math.PI;
-			// derive the earth's radius at that point in latitude
-			double radiusAtLatitude = earthRadius * Math.Cos(atLatitude * degreesToRadians);
-			return (miles / radiusAtLatitude) * radiansToDegrees;
-		}
-
 
 		public override void DidReceiveMemoryWarning ()
 		{

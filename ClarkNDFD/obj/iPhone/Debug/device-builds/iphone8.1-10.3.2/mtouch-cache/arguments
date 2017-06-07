@@ -1,0 +1,44 @@
+# Version: 10.10.0.36 (d15-2: d2270eec)
+# [first argument, ignore] # --cache
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/lib/mtouch/mtouch.exe \
+	/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/device-builds/iphone8.1-10.3.2/mtouch-cache \
+	--dev \
+	/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhone/Debug/device-builds/iphone8.1-10.3.2/ClarkNDFD.app \
+	--executable \
+	ClarkNDFD \
+	--fastdev \
+	--debug \
+	--linksdkonly \
+	--sdkroot \
+	/Volumes/WaterKH/Xcode.app/Contents/Developer \
+	--sdk \
+	10.3 \
+	--targetver \
+	8.0 \
+	--aot-options=-O=float32 \
+	--http-message-handler=HttpClientHandler \
+	--abi=arm64 \
+	--symbollist \
+	/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/device-builds/iphone8.1-10.3.2/mtouch-symbols.list \
+	--dsym=no \
+	-r \
+	/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/packages/Xamarin.TestCloud.Agent.0.19.0/lib/Xamarin.iOS10/Calabash.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	-r \
+	/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/packages/RestSharp.105.2.3/lib/Xamarin.iOS10/RestSharp.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
+	-r \
+	/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/packages/Xamarin.TestCloud.Agent.0.19.0/lib/Xamarin.iOS10/Calabash.dll \
+	-r \
+	/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/packages/RestSharp.105.2.3/lib/Xamarin.iOS10/RestSharp.dll \
+	--target-framework \
+	"Xamarin.iOS,v1.0" \
+	/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhone/Debug/ClarkNDFD.exe \

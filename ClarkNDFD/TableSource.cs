@@ -8,56 +8,57 @@ namespace ClarkNDFD
 {
 	public class TableSource : UITableViewSource
     {
-        List<string> TableItems;
-		//string CellIdentifier = "TableCell";
-        Dictionary<string, List<string>> sortedTableItems;
-        string[] keys;
+        //List<string> TableItems;
+        //string CellIdentifier = "TableCell";
+        //Dictionary<string, List<string>> sortedTableItems;
+        List<string[]> TableItems;
+        //string[] keys;
 
         WeatherViewController weatherView;
 
-        public TableSource(/*List<string> items,*/ WeatherViewController aView, string locationKey)
+        public TableSource(/*List<string[]> items,*/ WeatherViewController aView, string locationKey)
 		{
-			//TableItems = items;
             weatherView = aView;
+            TableItems = _Utilities.Utilities.CreateTableElements(locationKey);
 
-            sortedTableItems = Globals.CreateDictionaryFromDwml(locationKey);
+            //sortedTableItems = _Utilities.Utilities.CreateDictionaryFromDwml(locationKey);
 
-            keys = sortedTableItems.Keys.ToArray();
+            //keys = sortedTableItems.Keys.ToArray();
 		}
 
-        public override nint NumberOfSections(UITableView tableView)
+        /*public override nint NumberOfSections(UITableView tableView)
         {
             return keys.Length;
-        }
+        }*/
 
 		public override nint RowsInSection(UITableView tableview, nint section)
 		{
-            return sortedTableItems[keys[section]].Count;
+            return TableItems.Count;
 		}
 
 		public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
 		{
-            //UITableViewCell cell = tableView.DequeueReusableCell(CellIdentifier);
-            var cell = new UITableViewCell(UITableViewCellStyle.Default, "");
-            string item = sortedTableItems[keys[indexPath.Section]][indexPath.Row];//TableItems[indexPath.Row];
+            var cell = new WeatherCell();
+            var items = TableItems[indexPath.Row];
 
-			//---- if there are no cells to reuse, create a new one
-			//if (cell == null)
-			//{ cell = new UITableViewCell(UITableViewCellStyle.Default, CellIdentifier); }
+            cell.UpdateCell(items);
 
-			cell.TextLabel.Text = item;
+			//cell.TextLabel.Text = item;
 
 			return cell;
 		}
 
         public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
         {
-            var selectedItem = TableItems[indexPath.Row];
+            //var selectedItem = sortedTableItems[keys[indexPath.Section]][indexPath.Row];
+            var selectedCell = (WeatherCell)tableView.CellAt(indexPath);
+            // TODO Change the view to show aditional things
 
-            // TODO Change the view to show everything
+
+            tableView.DeselectRow(indexPath, true);
         }
 
-        public override string TitleForHeader(UITableView tableView, nint section)
+        /*public override string TitleForHeader(UITableView tableView, nint section)
         {
             return keys[section];
         }
@@ -81,6 +82,6 @@ namespace ClarkNDFD
         public override nfloat GetHeightForHeader(UITableView tableView, nint section)
         {
             return 44f;
-        }
+        }*/
 	}
 }

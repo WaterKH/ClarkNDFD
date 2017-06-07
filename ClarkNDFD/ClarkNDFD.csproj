@@ -18,7 +18,7 @@
     <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: clarktwins2@gmail.com (8XZFVS4NSM)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchFastDev>true</MtouchFastDev>
     <IOSDebuggerPort>42260</IOSDebuggerPort>
@@ -27,6 +27,7 @@
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <MtouchTlsProvider>Default</MtouchTlsProvider>
     <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>iOS Team Provisioning Profile: com.clarkndfd</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>pdbonly</DebugType>
@@ -123,6 +124,13 @@
     <Compile Include="WeatherViewController.designer.cs">
       <DependentUpon>WeatherViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="WeatherCell.cs" />
+    <Compile Include="MyMapDelegate.cs" />
+    <Compile Include="_Utilities\Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\test.png" />
+    <BundleResource Include="Resources\reel_king.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

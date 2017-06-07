@@ -14,7 +14,7 @@ namespace ClarkNDFD
 		readonly static string NDFDURL = "http://graphical.weather.gov/xml/sample_products/browser_interface";
 		
         public static async Task<Dwml> GET_NDFDGenCenter(double centerPointLat, double centerPointLon,
-		                                                 double distLat, double distLon, double resSquare)
+                                                         double distLat = 5.0, double distLon = 5.0, double resSquare = 2.5)
 		{
 			Console.WriteLine ("ENTER GET - NDFDXML");
 
@@ -50,17 +50,31 @@ namespace ClarkNDFD
 			}
 
             Console.WriteLine(client.BuildUri(request).AbsoluteUri);
-            var response = client.ExecuteTaskAsync<Dwml>(request).Result.Content;
+            var response = (await client.ExecuteTaskAsync<Dwml>(request));
+            Console.WriteLine(response.Content);
 
-            var altResponse = ModifyAndDeserializeXML(response);
+            if (response.Content.Substring(1, 5) != "error")
+            {
+                var altResponse = ModifyAndDeserializeXML(response.Content);
+
+                Console.WriteLine("EXITING GET - NDFDXML");
+                return altResponse;
+            }
+            else
+            {
+				Console.WriteLine("[ERROR] FAILED GET - NDFDXML");
+				return null;
+            }
+
+
 
             //Console.WriteLine("CONTENT: " + ((Dwml)obj).Data.LocationList.Location.Count);
 			// Generate response
             //var response = ExecuteAsync<Dwml> (request, client).Result;
 
-			Console.WriteLine ("EXITING GET - NDFDXML");
+			//Console.WriteLine ("EXITING GET - NDFDXML");
             //return response;
-            return altResponse;
+            //return altResponse;
 		}
 
         public static Dwml ModifyAndDeserializeXML(string response)

@@ -10,3 +10,16 @@
 /Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/ClarkNDFD.csproj.CoreCompileInputs.cache
 /Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/ClarkNDFD.exe
 /Volumes/WaterKH/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/ClarkNDFD.pdb
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhone/Debug/ClarkNDFD.exe
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhone/Debug/ClarkNDFD.pdb
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhone/Debug/Calabash.dll
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhone/Debug/RestSharp.dll
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/bin/iPhone/Debug/RestSharp.xml
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/device-builds/iphone8.1-10.3.2/ibtool/_BundleResourceWithLogicalName.items
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/device-builds/iphone8.1-10.3.2/actool/_PartialAppManifest.items
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/device-builds/iphone8.1-10.3.2/actool/_BundleResourceWithLogicalName.items
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/device-builds/iphone8.1-10.3.2/optimized/
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/ClarkNDFD.csproj.CoreCompileInputs.cache
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/ClarkNDFD.exe
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/ClarkNDFD.pdb
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhone/Debug/device-builds/iphone8.1-10.3.2/optimized/test.png
