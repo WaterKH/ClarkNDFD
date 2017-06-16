@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ClarkNDFD
+namespace ClarkNDBC
 {
 	public class Globals
 	{
@@ -12,6 +12,6 @@ namespace ClarkNDFD
 
         public static string[] test = { "Hello", "World" };
 
-        public static Dwml dwml;
+        public static NDBCGETAirTemp.ObservationCollection airTemp;
 	}
 }

@@ -22,11 +22,11 @@
 @class UIKit_UIControlEventProxy;
 @class AppDelegate;
 @class ViewController;
-@class ClarkNDFD_CustomAnnotation;
-@class ClarkNDFD_TableSource;
+@class ClarkNDBC_CustomAnnotation;
+@class ClarkNDBC_TableSource;
 @class WeatherViewController;
-@class ClarkNDFD_WeatherCell;
-@class ClarkNDFD_MyMapDelegate;
+@class ClarkNDBC_WeatherCell;
+@class ClarkNDBC_MyMapDelegate;
 @class MapKit_MKMapView__MKMapViewDelegate;
 @class __NSObject_Disposer;
 @class __UIGestureRecognizerToken;

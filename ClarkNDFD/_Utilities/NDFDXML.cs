@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace ClarkNDFD
+namespace ClarkNDBC
 {
 
-	[XmlRoot(ElementName = "creation-date")]
+	/*[XmlRoot(ElementName = "creation-date")]
 	public class Creationdate
 	{
 		[XmlAttribute(AttributeName = "refresh-frequency")]
@@ -408,6 +408,6 @@ namespace ClarkNDFD
 		public string Xsi { get; set; }
 		[XmlAttribute(AttributeName = "noNamespaceSchemaLocation", Namespace = "http://www.w3.org/2001/XMLSchema-instance")]
 		public string NoNamespaceSchemaLocation { get; set; }
-	}
+	}*/
 
 }

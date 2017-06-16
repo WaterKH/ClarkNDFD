@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ClarkNDFD
+namespace ClarkNDBC
 {
 	public class Settings
 	{

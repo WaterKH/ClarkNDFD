@@ -4,7 +4,7 @@ using UIKit;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ClarkNDFD
+namespace ClarkNDBC
 {
 	public class TableSource : UITableViewSource
     {
@@ -19,7 +19,7 @@ namespace ClarkNDFD
         public TableSource(/*List<string[]> items,*/ WeatherViewController aView, string locationKey)
 		{
             weatherView = aView;
-            TableItems = _Utilities.Utilities.CreateTableElements(locationKey);
+            //TableItems = _Utilities.Utilities.CreateTableElements(locationKey);
 
             //sortedTableItems = _Utilities.Utilities.CreateDictionaryFromDwml(locationKey);
 

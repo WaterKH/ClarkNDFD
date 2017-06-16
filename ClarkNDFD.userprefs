@@ -1,17 +1,19 @@
 ﻿<Properties StartupConfiguration="{22000A00-C4B8-4746-B31A-F6DCD5845C62}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ClarkNDFD/WeatherCell.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ClarkNDFD/_Utilities/REST_API.cs">
     <Files>
-      <File FileName="ClarkNDFD/ViewController.cs" Line="30" Column="26" />
-      <File FileName="ClarkNDFD/WeatherCell.cs" Line="71" Column="21" />
-      <File FileName="ClarkNDFD/MyMapDelegate.cs" Line="48" Column="62" />
-      <File FileName="ClarkNDFD/_Utilities/Utilities.cs" Line="61" Column="40" />
+      <File FileName="ClarkNDFD/ViewController.cs" Line="40" Column="1" />
+      <File FileName="ClarkNDFD/_Utilities/Utilities.cs" Line="28" Column="58" />
+      <File FileName="ClarkNDFD/_Utilities/REST_API.cs" Line="62" Column="37" />
+      <File FileName="ClarkNDFD/_Utilities/NDBCGETAirTemp.cs" Line="332" Column="27" />
+      <File FileName="ClarkNDFD/_Utilities/Globals.cs" Line="15" Column="59" />
+      <File FileName="ClarkNDFD/Main.cs" Line="13" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ClarkNDFD PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.1019f96e77e3c9e4febb4a088a67db1dbc580ba2" />
+  <MonoDevelop.Ide.ItemProperties.ClarkNDFD PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.B66E0BA2-5362-4748-91E3-DD9A942C3C3B" />
   <MultiItemStartupConfigurations />
 </Properties>

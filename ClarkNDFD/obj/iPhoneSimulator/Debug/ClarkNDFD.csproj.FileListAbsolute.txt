@@ -24,3 +24,4 @@
 /Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/ClarkNDFD.csproj.CoreCompileInputs.cache
 /Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/ClarkNDFD.exe
 /Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/ClarkNDFD.pdb
+/Volumes/WaterKH/PersonalProjects/Repositories/ClarkNDFD/ClarkNDFD/ClarkNDFD/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/optimized/test.png

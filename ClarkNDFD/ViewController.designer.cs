@@ -8,7 +8,7 @@ using Foundation;
 using System;
 using System.CodeDom.Compiler;
 
-namespace ClarkNDFD
+namespace ClarkNDBC
 {
     [Register ("ViewController")]
     partial class ViewController

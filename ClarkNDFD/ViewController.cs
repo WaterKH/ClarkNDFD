@@ -6,9 +6,9 @@ using System.Xml.Serialization;
 using CoreLocation;
 using MapKit;
 using UIKit;
-using ClarkNDFD._Utilities;
+using ClarkNDBC._Utilities;
 
-namespace ClarkNDFD
+namespace ClarkNDBC
 {
 	public partial class ViewController : UIViewController
 	{
@@ -48,7 +48,7 @@ namespace ClarkNDFD
 
 			map.ShowsUserLocation = true;
 
-            Utilities.CreateWeatherPins(map);
+            Utilities.CreateStationLocations(map);
 
 			Console.WriteLine("DISPLAY MAP");
 			View = map;

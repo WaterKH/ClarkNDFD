@@ -3,7 +3,7 @@ using CoreGraphics;
 using Foundation;
 using UIKit;
 
-namespace ClarkNDFD
+namespace ClarkNDBC
 {
     public class WeatherCell : UITableViewCell
     {

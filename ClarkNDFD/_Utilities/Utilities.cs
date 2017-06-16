@@ -7,24 +7,37 @@ using UIKit;
 using RestSharp;
 using Foundation;
 
-namespace ClarkNDFD._Utilities
+namespace ClarkNDBC._Utilities
 {
     public class Utilities
     {
-		public static async void CreateWeatherPins(MKMapView map)
+		public static async void CreateStationLocations(MKMapView map)
 		{
 			//Globals.currLocation_Lat = 34.422500;
 			//Globals.currLocation_Lon = -78.923056;
 
-			var weatherDetails = await REST_API.GET_NDFDGenCenter(Globals.currLocation_Lat, Globals.currLocation_Lon, 5, 5, 2.5);
+            var weatherDetails_AirTemp = await REST_API.GET_NDBCGETObservation("air_temperature");//(Globals.currLocation_Lat, Globals.currLocation_Lon, 5, 5, 2.5);
 
-			Globals.dwml = weatherDetails;
+            Globals.airTemp = weatherDetails_AirTemp;
 
 			var mapAnnotations = new List<CustomAnnotation>();
 
-			if (weatherDetails != null)
+			if (weatherDetails_AirTemp != null)
 			{
-				var tempLoc = weatherDetails.Data.LocationList.Location;
+                Console.WriteLine(weatherDetails_AirTemp.Member2.Count);
+                foreach(var loc in weatherDetails_AirTemp.Member2)
+                {
+                    var tempLatLong = loc.Observation.FeatureOfInterest.FeatureCollection.Location.MultiPoint.PointMembers.Point.Pos.Split(' ');
+                    var coord = new CLLocationCoordinate2D(double.Parse(tempLatLong[0]), double.Parse(tempLatLong[1]));
+
+                    var tempAnnotation = new CustomAnnotation("Weather", coord, loc.Observation.Procedure.Process.Member.Href);
+
+                    tempAnnotation.weather = loc.Observation.Result.DataStream.Values.Split(',')[1] + " Celsius";
+					
+
+					mapAnnotations.Add(tempAnnotation);
+                }
+				/*var tempLoc = weatherDetails.Data.LocationList.Location;
 
 				for (int i = 0; i < tempLoc.Count; ++i)
 				{
@@ -45,7 +58,7 @@ namespace ClarkNDFD._Utilities
 					tempAnnotation.weather += param.Temperature[0].Type + ": " + param.Temperature[0].Value[0];
 
 					mapAnnotations.Add(tempAnnotation);
-				}
+				}*/
 			}
 
             if (mapAnnotations.Count > 0)
@@ -61,6 +74,7 @@ namespace ClarkNDFD._Utilities
             Console.WriteLine("Finished");
 		}
 
+        /*
         public static List<string[]> CreateTableElements(string locationKey)
         {
             var list = new List<string[]>();
@@ -140,7 +154,7 @@ namespace ClarkNDFD._Utilities
             }
 
             return list;
-        }
+        }*/
 
 		/*public static Dictionary<string, List<string>> CreateDictionaryFromDwml(string locationKey)
 		{

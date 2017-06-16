@@ -2,7 +2,7 @@
 using CoreLocation;
 using MapKit;
 
-namespace ClarkNDFD
+namespace ClarkNDBC
 {
 	public class CustomAnnotation : MKAnnotation
 	{

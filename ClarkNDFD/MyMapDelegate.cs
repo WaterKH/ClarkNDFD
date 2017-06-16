@@ -2,7 +2,7 @@
 using MapKit;
 using UIKit;
 
-namespace ClarkNDFD
+namespace ClarkNDBC
 {
 	public class MyMapDelegate : MKMapViewDelegate
 	{
